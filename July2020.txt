@@ -1,0 +1,50 @@
+#July 20th
+
+----- initialization -----
+git init
+git config --global user.email "email@address.com"
+git config --global user.name "name"
+--------------------------
+
+----- add commit -----
+git add filename
+git commit -m "message"
+----------------------
+
+----- etc -----
+git
+git log
+git checkout
+git checkout - << checkout the recent commit
+---------------
+
+----- push to GitHub / Clone / Pull -----
+git remote add origin GitHubHTTPS
+git push origin master
+git clone GitHubCloneHTTPS . << space dot means clone at this directory
+git pull origin master
+-----------------------------------------
+
+origin >> GitHub의 원격저장소의 닉네임, git remote add myOrigin 등으로 변경가능
+master >> 커밋을 올리는 줄기의 개념, 로컬저장소를 뜻함
+
+commit을 생성한다는 것은 스냅샷을 찍는 것
+git은 비교를 통해 업데이트된 항목들을 체크함
+
+----- git에 의해 관리되는 파일들은 총 네가지 유형 -----
+1. Untracked (추적안됨)
+한번도 커밋되지 않았기에 추적되지 않음
+커밋된 이후에는 추적됨(2~4번 상태)
+
+2. Staged (스테이지됨)
+로컬저장소의 git폴더(stage)에 add
+
+3. unmodified (수정없음)
+스테이지의 파일들을 commit 하게되면 스테이지됨에서 수정없음으로 변경
+수정없음 상태의 파일은 다른 수정 가능
+
+4. modified (수정함)
+수정없음 상태의 파일을 수정할 경우
+----------------------------------------------------
+
+
